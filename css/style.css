@@ -164,10 +164,11 @@ button:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 50px;
+  background-color: #333333;
 }
 
 .about .about-block {
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,7 +183,7 @@ button:focus {
   font-weight: 500;
   font-size: 32px;
   line-height: 37px;
-  color: #000000;
+  color: #fff;
   margin-bottom: 30px;
 }
 
@@ -190,9 +191,6 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -200,23 +198,24 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
+  width: 100%;
   height: 400px;
   position: relative;
   margin-bottom: 50px;
 }
 
 .about .about-block .about-info .about-description {
+  width: 60%;
   font-size: 16px;
   line-height: 26px;
   text-align: justify;
-  color: #727272;
+  color: #e8e8e8;
 }
 
 .about .about-block .about-info .avatar {
   position: absolute;
   top: 0;
-  right: -67%;
+  right: 0;
   height: 100%;
   width: auto;
   -o-object-fit: cover;
