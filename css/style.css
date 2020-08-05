@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+h2,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+.header {
+  padding-top: 57px;
+  padding-bottom: 146px;
+  background: #EEEFF1;
+}
+
+.header .header-block {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.header .header-block .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-block .navigation .nav-link {
+  position: relative;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.header .header-block .navigation .nav-link:not(:last-child) {
+  margin-right: 42px;
+}
+
+.header .header-block .navigation .nav-link::before {
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: -4px;
+  content: '';
+  width: 0%;
+  height: 1px;
+  background: #34547A;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.header .header-block .navigation .nav-link:hover {
+  color: #34547A;
+}
+
+.header .header-block .navigation .nav-link:hover:before {
+  width: 80%;
+}
+
+.header .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1105px;
+  margin: auto;
+  margin-top: 162px;
+}
+
+.header .header-info .header-info-image {
+  margin-left: 82px;
+  margin-right: 116px;
+  width: 357px;
+  height: 234px;
+}
+
+.header .header-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .header-info .info-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.header .header-info .info-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 60px;
+}
+
+.header .header-info .info-button {
+  width: 225px;
+  height: 65px;
+  background: #34547A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+}
+
+.about .about-block {
+  width: 50%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .about-block .about-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.about .about-block .about-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about .about-block .about-info .about-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  color: #727272;
+}
+
+.about .about-block .about-info .avatar {
+  position: absolute;
+  top: 0;
+  right: -67%;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .about-block .about-skills {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.about .about-block .about-skills .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about .about-block .about-skills .cards .card {
+  position: relative;
+  width: 250px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b1b1b), color-stop(#222), to(#1b1b1b));
+  background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about .about-block .about-skills .cards .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.about .about-block .about-skills .cards .card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about .about-block .about-skills .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 0 50px #000;
+          box-shadow: inset 0 0 50px #000;
+  background: #222222;
+  z-index: 1000;
+}
+
+.about .about-block .about-skills .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.about .about-block .about-skills .percent .number h2 {
+  color: #777;
+  font-weight: 700;
+  font-size: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about .about-block .about-skills .percent .number h2 span {
+  font-size: 24px;
+  color: #777;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about .about-block .about-skills .text {
+  position: relative;
+  margin-top: 20px;
+  color: #777777;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about .about-block .about-skills .card:hover .number h2 {
+  color: #fff;
+  font-size: 55px;
+}
+
+.about .about-block .about-skills .card:hover .number h2 span {
+  color: #fff;
+}
+
+.about .about-block .about-skills .card:hover .text {
+  color: #fff;
+}
+
+.about .about-block .about-skills svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+.about .about-block .about-skills svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+.about .about-block .about-skills svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.about .about-block .about-skills .card:nth-child(1) svg circle:nth-child(2) {
+  stroke: #00ff43;
+}
+
+.about .about-block .about-skills .card:nth-child(2) svg circle:nth-child(2) {
+  stroke: #00a1ff;
+}
+
+.about .about-block .about-skills .card:nth-child(3) svg circle:nth-child(2) {
+  stroke: #e65b5b;
+}
+/*# sourceMappingURL=style.css.map */
