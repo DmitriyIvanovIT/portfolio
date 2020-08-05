@@ -227,7 +227,7 @@ button:focus {
                 border-radius: 50%;
                 box-shadow: inset 0 0 50px #000;
                 background: #222222;
-                z-index: 1000; 
+                z-index: 1000;
 
                 .number {
                     position: absolute;
@@ -238,18 +238,18 @@ button:focus {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    border-radius: 50%; 
+                    border-radius: 50%;
 
                     h2 {
                         color: #777;
                         font-weight: 700;
                         font-size: 40px;
-                        transition: 0.5s; 
+                        transition: 0.5s;
 
                         span {
                             font-size: 24px;
                             color: #777;
-                            transition: 0.5s; 
+                            transition: 0.5s;
                         }
                     }
                 }
@@ -267,12 +267,12 @@ button:focus {
             }
 
             .card:hover {
-                .number h2{
+                .number h2 {
                     color: #fff;
                     font-size: 55px;
 
                     span {
-                        color: #fff; 
+                        color: #fff;
                     }
                 }
 
@@ -281,7 +281,7 @@ button:focus {
                 }
             }
 
-            
+
 
             svg {
                 position: relative;
@@ -333,3 +333,129 @@ button:focus {
     }
 }
 
+.works {
+    width: 100%;
+    padding: 50px 0 160px 0;
+    background: #EEEFF1;
+
+    &-block {
+        width: 80%;
+        margin: auto;
+
+        .works-title {
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 79px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .works-cards {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            .works-card {
+                position: relative;
+                width: 300px;
+                height: 110px;
+                background: #ffffff;
+                margin: 40px 20px;
+                padding: 20px 15px;
+                display: flex;
+                flex-direction: column;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+
+
+                .imgBx {
+                    position: relative;
+                    width: 260px;
+                    height: 146px;
+                    top: -60px;
+                    left: 20px;
+                    z-index: 1;
+                    box-sizing: border-box;
+                    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.2);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 4px;
+                    }
+                }
+
+                .content {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: -140px;
+                    padding: 10px 15px;
+                    text-align: center;
+                    color: #111111;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.3s ease-in-out;
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 37px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        line-height: 26px;
+                        text-align: justify;
+                        color: #727272;
+                    }
+
+                    .buttons {
+
+                        display: flex;
+                        flex-direction: column;
+
+                        a {
+                            background: #34547A;
+                            width: 200px;
+                            height: 50px;
+                            font-size: 10px;
+                            line-height: 26px;
+                            text-align: center;
+                            letter-spacing: 0.1em;
+                            color: #FFFFFF;
+                            text-transform: uppercase;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-decoration: none;
+                            margin-top: 10px;
+
+                            &:hover {
+                                background: #4676ae;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .works-card:hover,
+            .works-card.active {
+                height: 300px;
+                margin-bottom: -150px;
+                z-index: 99;
+                box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+
+                .content {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top: -50px;
+                    transition-delay: 0.3s;
+                }
+            }
+        }
+    }
+}

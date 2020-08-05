@@ -384,4 +384,165 @@ button:focus {
 .about .about-block .about-skills .card:nth-child(3) svg circle:nth-child(2) {
   stroke: #e65b5b;
 }
+
+.works {
+  width: 100%;
+  padding: 50px 0 160px 0;
+  background: #EEEFF1;
+}
+
+.works-block {
+  width: 80%;
+  margin: auto;
+}
+
+.works-block .works-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 79px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.works-block .works-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.works-block .works-cards .works-card {
+  position: relative;
+  width: 300px;
+  height: 110px;
+  background: #ffffff;
+  margin: 40px 20px;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.works-block .works-cards .works-card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 146px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 5px 202px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 202px rgba(0, 0, 0, 0.2);
+}
+
+.works-block .works-cards .works-card .imgBx img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+
+.works-block .works-cards .works-card .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111111;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.works-block .works-cards .works-card .content h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 37px;
+}
+
+.works-block .works-cards .works-card .content p {
+  font-size: 12px;
+  line-height: 26px;
+  text-align: justify;
+  color: #727272;
+}
+
+.works-block .works-cards .works-card .content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.works-block .works-cards .works-card .content .buttons a {
+  background: #34547A;
+  width: 200px;
+  height: 50px;
+  font-size: 10px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.works-block .works-cards .works-card .content .buttons a:hover {
+  background: #4676ae;
+}
+
+.works-block .works-cards .works-card:hover,
+.works-block .works-cards .works-card.active {
+  height: 300px;
+  margin-bottom: -150px;
+  z-index: 99;
+  -webkit-box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+}
+
+.works-block .works-cards .works-card:hover .content,
+.works-block .works-cards .works-card.active .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -50px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
 /*# sourceMappingURL=style.css.map */
