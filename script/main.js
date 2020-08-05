@@ -15,7 +15,7 @@ closeCard = () => {
 openCard = elem => {
     closeCard();
     elem.classList.add('active');
-}
+};
 
 
 card.forEach(item => cardProgress(item));
@@ -31,4 +31,12 @@ document.addEventListener('click', event => {
         closeCard();
     };
 
+});
+
+worksCard.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        if (!item.classList.contains('active')) {
+            closeCard();
+        }
+    });
 });

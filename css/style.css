@@ -545,4 +545,8 @@ button:focus {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
+
+.works-block .works-cards .works-card.active {
+  z-index: 98;
+}
 /*# sourceMappingURL=style.css.map */

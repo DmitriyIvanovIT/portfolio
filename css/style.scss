@@ -456,6 +456,10 @@ button:focus {
                     transition-delay: 0.3s;
                 }
             }
+
+            .works-card.active {
+                z-index: 98;
+            }
         }
     }
 }
