@@ -1,21 +1,58 @@
 const card = document.querySelectorAll('.card'),
-worksCards = document.querySelector('.works-cards'),
-worksCard = document.querySelectorAll('.works-card');
+    worksCards = document.querySelector('.works-cards'),
+    worksCard = document.querySelectorAll('.works-card'),
+    contactForm = document.querySelector('.contact-form form'),
+    formButton = contactForm.querySelector('.form-button'),
+    emailInput = contactForm.querySelectorAll('input')[1],
+    errorForm = document.querySelector('.error-form');
+
+
+formButton.disabled = true;
+
+const elementsForm = [...contactForm.elements]
+    .filter(elem => elem.type !== 'submit');
+
+    console.log(elementsForm );
 
 const cardProgress = item => {
-    const progress = item.querySelector('.number h2').textContent,
-    circle = item.querySelectorAll('circle')[1];
-    
-    circle.style.strokeDashoffset = `calc(440 - (440 * ${parseInt(progress)}) / 100)`;
+        const progress = item.querySelector('.number h2').textContent,
+            circle = item.querySelectorAll('circle')[1];
 
-}, 
-closeCard = () => {
-    worksCard.forEach(item => item.classList.remove('active'));
-},
-openCard = elem => {
-    closeCard();
-    elem.classList.add('active');
-};
+        circle.style.strokeDashoffset = `calc(440 - (440 * ${parseInt(progress)}) / 100)`;
+
+    },
+    closeCard = () => {
+        worksCard.forEach(item => item.classList.remove('active'));
+    },
+    openCard = elem => {
+        closeCard();
+        elem.classList.add('active');
+    },
+    checkForm = () => {
+        const validForm = elementsForm.every(elem => elem.value);
+        formButton.disabled = !validForm;
+    },
+    checkEmail = item => {
+        const check = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i,
+            valid = check.test(item);
+
+        return valid;
+
+    }, 
+    checkName = () => {
+        if (nameInput.value.trim() !== '' ) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    checkMassage = () => {
+        if (messageInput.value.trim() !== '' ) {
+            return true;
+        } else {
+            return false;
+        }
+    };
 
 
 card.forEach(item => cardProgress(item));
@@ -40,3 +77,17 @@ worksCard.forEach(item => {
         }
     });
 });
+
+contactForm.addEventListener('input', checkForm);
+
+formButton.addEventListener('click', event => {
+    event.preventDefault();
+
+    if (checkEmail(emailInput.value.trim()) !== false) {
+        errorForm.textContent = '';
+        contactForm.reset();
+    } else {
+        errorForm.textContent = 'Email введен неверно!';
+    }
+    
+})

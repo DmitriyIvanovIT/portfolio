@@ -168,7 +168,7 @@ button:focus {
 }
 
 .about .about-block {
-  width: 60%;
+  width: 1140px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,6 +409,9 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -548,5 +551,194 @@ button:focus {
 
 .works-block .works-cards .works-card.active {
   z-index: 98;
+}
+
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 0;
+  background-color: #333333;
+}
+
+.footer .footer-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  width: 550px;
+  padding: 40px;
+  background: #ffffff;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
+.contact-form .error-form {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 11px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.contact-form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .inputBox input,
+.contact-form .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span {
+  color: #ea1d1d;
+  font-size: 12px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:valid ~ span {
+  color: #26db34;
+}
+
+.contact-form .inputBox input[type="submit"] {
+  width: 130px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.contact-form .inputBox input[disabled] {
+  background: #878989;
+  color: #b8b8b8;
+  pointer-events: none;
+}
+
+.contact ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 96px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  list-style: none;
+  margin: 0 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact ul li a {
+  text-decoration: none;
+}
+
+.contact ul li a .fa {
+  font-size: 6em;
+  color: #ffffff;
+}
+
+.contact ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  font-size: 6em;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.contact ul li:hover:before {
+  height: 100%;
+}
+
+.contact ul li:nth-child(1):before {
+  content: '\f189';
+  color: #4a76a8;
+  border-bottom: 4px solid #4a76a8;
+}
+
+.contact ul li:nth-child(2):before {
+  content: '\f16d';
+  color: #cc457c;
+  border-bottom: 4px solid #cc457c;
+}
+
+.contact ul li:nth-child(3):before {
+  content: '\f2c6';
+  color: #00719c;
+  border-bottom: 4px solid #00719c;
+}
+
+.contact ul li:hover:before {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

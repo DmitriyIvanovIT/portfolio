@@ -136,7 +136,7 @@ button:focus {
     background-color: #333333;
 
     .about-block {
-        width: 60%;
+        width: 1140px;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -353,6 +353,7 @@ button:focus {
         .works-cards {
             width: 100%;
             display: flex;
+            justify-content: center;
             align-items: flex-start;
             flex-wrap: wrap;
 
@@ -459,6 +460,175 @@ button:focus {
 
             .works-card.active {
                 z-index: 98;
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 70px 0;
+    background-color: #333333;
+
+    .footer-title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+}
+
+.contact-form {
+    width: 550px;
+    padding: 40px;
+    background: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+
+    h2 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 37px;
+        margin-bottom: 10px;
+    }
+
+    .error-form {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 11px;
+        color: red;
+        margin-bottom: 20px;
+    }
+
+    .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+
+        span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+
+        input:focus~span,
+        input:valid~span,
+        textarea:focus~span,
+        textarea:valid~span {
+            color: #ea1d1d;
+            font-size: 12px;
+            transform: translateY(-20px)
+        }
+
+        input:valid~span,
+        textarea:valid~span {
+            color: #26db34;
+        }
+
+        input[type="submit"] {
+            width: 130px;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        input[disabled] {
+            background: #878989;
+            color: #b8b8b8;
+            pointer-events: none;
+        }
+    }
+}
+
+.contact {
+    ul {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            height: 96px;
+            justify-content: center;
+            position: relative;
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            a {
+                text-decoration: none;
+
+                .fa {
+                    font-size: 6em;
+                    color: #ffffff;
+                }
+            }
+
+            &::before {
+                font-family: fontAwesome;
+                position: absolute;
+                top: 3px;
+                left: 0;
+                width: 100%;
+                font-size: 6em;
+                height: 0;
+                overflow: hidden;
+                transition: 0.5s ease-in-out;
+            }
+
+            &:hover:before {
+                height: 100%;
+            }
+
+            &:nth-child(1):before {
+                content: '\f189';
+                color: #4a76a8;
+                border-bottom: 4px solid #4a76a8;
+            }
+
+            &:nth-child(2):before {
+                content: '\f16d';
+                color: #cc457c;
+                border-bottom: 4px solid #cc457c;
+            }
+
+            &:nth-child(3):before {
+                content: '\f2c6';
+                color: #00719c;
+                border-bottom: 4px solid #00719c;
+            }
+
+            &:hover:before {
+                height: 100%;
             }
         }
     }
