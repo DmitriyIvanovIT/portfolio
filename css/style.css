@@ -598,7 +598,7 @@ button:focus {
 .contact-form .error-form {
   font-weight: 500;
   font-size: 15px;
-  line-height: 11px;
+  line-height: 17px;
   color: red;
   margin-bottom: 20px;
 }
@@ -740,5 +740,129 @@ button:focus {
 
 .contact ul li:hover:before {
   height: 100%;
+}
+
+@media (max-width: 1260px) {
+  .header .header-block {
+    width: 90%;
+  }
+  .header .header-info {
+    width: 90%;
+  }
+  .about .about-block {
+    width: 90%;
+  }
+  .works-block {
+    width: 90%;
+  }
+  .works-block .works-cards {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .works-block .works-cards .works-card {
+    width: 270px;
+    margin: 40px 30px;
+    margin-left: 0;
+  }
+  .works-block .works-cards .works-card .imgBx {
+    left: 5px;
+  }
+}
+
+@media (max-width: 769px) {
+  .header {
+    padding-bottom: 57px;
+  }
+  .header .header-info {
+    margin-top: 60px;
+  }
+  .header-info svg {
+    display: none;
+  }
+  .header .header-info .info-title {
+    font-size: 38px;
+    line-height: 69px;
+    margin-bottom: 20px;
+  }
+  .about .about-block .about-info {
+    height: auto;
+  }
+  .about .about-block .about-info .about-description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about .about-block .about-info .avatar {
+    position: static;
+    width: 500px;
+    margin: auto;
+    height: auto;
+  }
+  .about .about-block .about-skills .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .about-block .about-skills .cards .card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 568px) {
+  .header-block svg {
+    display: none;
+  }
+  .header .header-block .navigation {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .header-block .navigation .nav-link {
+    margin: 0;
+    font-size: 10px;
+  }
+  .about .about-block .about-info .avatar {
+    width: 100%;
+  }
+  .about .about-block .about-skills .cards .card {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .about .about-block .about-skills .cards .card {
+    width: 100%;
+    height: 400px;
+  }
+  .works-block .works-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .works-block .works-cards .works-card {
+    margin-right: 0;
+  }
+  .works-block .works-cards .works-card:hover, .works-block .works-cards .works-card.active {
+    margin-bottom: 40px;
+  }
+  .contact-form {
+    width: 90%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
+  }
+  .contact ul li {
+    height: 58px;
+  }
+  .contact ul li a .fa {
+    font-size: 4em;
+    color: #ffffff;
+  }
+  .contact ul li::before {
+    font-size: 4em;
+    top: 2px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
