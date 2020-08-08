@@ -369,7 +369,6 @@ button:focus {
                 transition: 0.3s ease-in-out;
                 cursor: pointer;
 
-
                 .imgBx {
                     position: relative;
                     width: 260px;
@@ -391,6 +390,7 @@ button:focus {
                 .content {
                     position: relative;
                     display: flex;
+                    min-height: 183px;
                     align-items: center;
                     flex-direction: column;
                     margin-top: -140px;
@@ -412,6 +412,9 @@ button:focus {
                         line-height: 26px;
                         text-align: justify;
                         color: #727272;
+                        text-overflow: ellipsis; 
+                        white-space: nowrap; 
+                        overflow: hidden;
                     }
 
                     .buttons {
@@ -445,8 +448,9 @@ button:focus {
 
             .works-card:hover,
             .works-card.active {
-                height: auto;
-                margin-bottom: -170px;
+                height: 300px;
+                margin-bottom: -150px;
+                
                 z-index: 99;
                 box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
 

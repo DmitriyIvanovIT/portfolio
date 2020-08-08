@@ -464,6 +464,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 183px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -492,6 +493,9 @@ button:focus {
   line-height: 26px;
   text-align: justify;
   color: #727272;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .works-block .works-cards .works-card .content .buttons {
@@ -534,8 +538,8 @@ button:focus {
 
 .works-block .works-cards .works-card:hover,
 .works-block .works-cards .works-card.active {
-  height: auto;
-  margin-bottom: -170px;
+  height: 300px;
+  margin-bottom: -150px;
   z-index: 99;
   -webkit-box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
