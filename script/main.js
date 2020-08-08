@@ -72,7 +72,7 @@ formButton.addEventListener('click', event => {
   event.preventDefault();
 
   if (checkEmail(emailInput.value.trim()) !== false) {
-    errorForm.textContent = 'К сожалению на данный момент отправка письма не возможна для связи можете использовать соц.сети ниже';
+    errorForm.textContent = 'К сожалению на данный момент отправка письма не возможна. Для связи можете использовать соц.сети ниже';
     errorForm.style.color = 'green';
     contactForm.reset();
   } else {

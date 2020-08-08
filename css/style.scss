@@ -415,7 +415,7 @@ button:focus {
                     }
 
                     .buttons {
-
+                        margin-top: auto;
                         display: flex;
                         flex-direction: column;
 
@@ -445,8 +445,8 @@ button:focus {
 
             .works-card:hover,
             .works-card.active {
-                height: 300px;
-                margin-bottom: -150px;
+                height: auto;
+                margin-bottom: -170px;
                 z-index: 99;
                 box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
 
