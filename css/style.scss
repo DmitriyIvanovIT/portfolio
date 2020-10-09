@@ -341,18 +341,31 @@ button:focus {
     &-block {
         width: 80%;
         margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
 
         .works-title {
             font-weight: 500;
             font-size: 36px;
-            line-height: 79px;
             color: #000000;
-            margin-bottom: 10px;
+        }
+
+        .filter-work {
+            padding: 0;
+            font-size: 36px;
+            border: none;
+            background: transparent;
+            outline: none;
+            text-align: right;
         }
 
         .works-cards {
+            margin-top: 20px;
             width: 100%;
             display: flex;
+            flex-basis: 100%;
             justify-content: center;
             align-items: flex-start;
             flex-wrap: wrap;
@@ -362,10 +375,11 @@ button:focus {
                 width: 300px;
                 height: 110px;
                 background: #ffffff;
-                margin: 40px 20px;
+                margin: 40px 10px;
                 padding: 20px 15px;
                 display: flex;
                 flex-direction: column;
+                opacity: 1;
                 transition: 0.3s ease-in-out;
                 cursor: pointer;
 

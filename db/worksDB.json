@@ -1,0 +1,161 @@
+[
+    {
+        "name": "Аviasales",
+        "description": "Аналог сайта компании «Aviasales»",
+        "images": "img/works/aviasales.jpg",
+        "page": "https://dmitriyivanovit.github.io/aviasales/",
+        "codes": "https://github.com/DmitriyIvanovIT/aviasales",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Ведьмак",
+        "description": "Промо сайт сериала «Ведьмак» от Netflix",
+        "images": "img/works/The_Witcher.jpg",
+        "page": "https://dmitriyivanovit.github.io/The_Witcher/",
+        "codes": "https://github.com/DmitriyIvanovIT/The_Witcher",
+        "tools": "HTML"
+    },
+    {
+        "name": "Batman2021",
+        "description": "Промо сайт к фильму «Бэтмен» 2021 года",
+        "images": "img/works/Batman2021.jpg",
+        "page": "https://dmitriyivanovit.github.io/Batman2021/",
+        "codes": "https://github.com/DmitriyIvanovIT/Batman2021",
+        "tools": "HTML"
+    },
+    {
+        "name": "Delivery Food",
+        "description": "Аналог сайта по доставке еды «Delivery club»",
+        "images": "img/works/Delivery-food.jpg",
+        "page": "https://dmitriyivanovit.github.io/Delivery-Food/",
+        "codes": "https://github.com/DmitriyIvanovIT/Delivery-Food",
+        "tools": "Java Script"
+    },
+    {
+        "name": "CinemaSearch",
+        "description": "Сайт о фильмах",
+        "images": "img/works/CinemaSearch.jpg",
+        "page": "https://dmitriyivanovit.github.io/CinemaSearch/",
+        "codes": "https://github.com/DmitriyIvanovIT/CinemaSearch",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Netclicks",
+        "description": "Сайт о сериалах",
+        "images": "img/works/netclicks.png",
+        "page": "https://dmitriyivanovit.github.io/netclicks/",
+        "codes": "https://github.com/DmitriyIvanovIT/netclicks",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Дистанция",
+        "description": "Главная страница выдуманной соц. сети",
+        "images": "img/works/distance.jpg",
+        "page": "https://dmitriyivanovit.github.io/distance/",
+        "codes": "https://github.com/DmitriyIvanovIT/distance",
+        "tools": "HTML"
+    },
+    {
+        "name": "Ghostbusters",
+        "description": "Промо сайт к фильму «Охотники на приведений»",
+        "images": "img/works/ghostbusters-logo-znak-fon.jpg",
+        "page": "https://dmitriyivanovit.github.io/Ghostbusters/",
+        "codes": "https://github.com/DmitriyIvanovIT/Ghostbusters",
+        "tools": "HTML"
+    },
+    {
+        "name": "Star Wars",
+        "description": "Промо сайт к фильму «Звездные воины»",
+        "images": "img/works/starWars.jpeg",
+        "page": "https://dmitriyivanovit.github.io/star_wars/",
+        "codes": "https://github.com/DmitriyIvanovIT/star_wars",
+        "tools": "HTML"
+    },
+    {
+        "name": "Awito",
+        "description": "Аналог сайта объявлений «Avito»",
+        "images": "img/works/Avito_case_new_logo.jpg",
+        "codes": "https://github.com/DmitriyIvanovIT/awito",
+        "tools": "Java Script"
+    },
+    {
+        "name": "ЯTunes",
+        "description": "Сайт с медиаплеирами на JS",
+        "images": "img/works/itunes.jpeg",
+        "page": "https://dmitriyivanovit.github.io/iTunes/",
+        "codes": "https://github.com/DmitriyIvanovIT/iTunes",
+        "tools": "Java Script"
+    },
+    {
+        "name": "SpaceX",
+        "description": "Аналог сайта компании Илона Маска",
+        "images": "img/works/spacex.jpg",
+        "page": "https://dmitriyivanovit.github.io/SpaceX/",
+        "codes": "https://github.com/DmitriyIvanovIT/SpaceX",
+        "tools": "HTML"
+    },
+    {
+        "name": "Твои финансы",
+        "description": "Калькулятор финансов",
+        "images": "img/works/calcMoney.jpg",
+        "page": "https://dmitriyivanovit.github.io/calc-money/",
+        "codes": "https://github.com/DmitriyIvanovIT/reactWorkShop",
+        "tools": "React"
+    },
+    {
+        "name": "Ежедневник",
+        "description": "Сайт для планирования дел",
+        "images": "img/works/todolist.png",
+        "page": "https://dmitriyivanovit.github.io/ToDoList/",
+        "codes": "https://github.com/DmitriyIvanovIT/ToDoList/tree/lesson22h",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Гоночки",
+        "description": "Игра гоночки на JS",
+        "images": "img/works/races.jpg",
+        "page": "https://dmitriyivanovit.github.io/NeedForJS/",
+        "codes": "https://github.com/DmitriyIvanovIT/NeedForJS/tree/changeCar",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Финансы",
+        "description": "Калькулятор финаносов на JS в ООП стиле",
+        "images": "img/works/calcMoney.jpg",
+        "page": "https://dmitriyivanovit.github.io/glo_js/",
+        "codes": "https://github.com/DmitriyIvanovIT/glo_js/tree/lesson16h",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Услуги моделирования",
+        "description": "Сайт услуг по 3D моделированию",
+        "images": "img/works/3d.jpg",
+        "page": "https://dmitriyivanovit.github.io/3d-Glo_js/",
+        "codes": "https://github.com/DmitriyIvanovIT/3d-Glo_js/tree/lesson32",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Герои Marvel",
+        "description": "Сайт о героях вселенной Marvel",
+        "images": "img/works/marvel.jpg",
+        "page": "https://dmitriyivanovit.github.io/heroes-page/",
+        "codes": "https://github.com/DmitriyIvanovIT/heroes-page",
+        "tools": "Java Script"
+    },
+    {
+        "name": "Города",
+        "description": "Сайт с информацией о городах",
+        "images": "img/works/cites.jpg",
+        "page": "https://dmitriyivanovit.github.io/inputCities/",
+        "codes": "https://github.com/DmitriyIvanovIT/inputCities/tree/version03",
+        "tools": "Java Script"
+    },
+    {
+        "name": "ИКЕЯ",
+        "description": "Сайт каталог ИКЕИ",
+        "images": "img/works/ikea.jpg",
+        "page": "https://dmitriyivanovit.github.io/workshop-ikea-js/",
+        "codes": "https://github.com/DmitriyIvanovIT/workshop-ikea-js/tree/day04",
+        "tools": "Java Script"
+    }
+]

@@ -394,21 +394,42 @@ button:focus {
 .works-block {
   width: 80%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .works-block .works-title {
   font-weight: 500;
   font-size: 36px;
-  line-height: 79px;
   color: #000000;
-  margin-bottom: 10px;
+}
+
+.works-block .filter-work {
+  padding: 0;
+  font-size: 36px;
+  border: none;
+  background: transparent;
+  outline: none;
+  text-align: right;
 }
 
 .works-block .works-cards {
+  margin-top: 20px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -424,7 +445,7 @@ button:focus {
   width: 300px;
   height: 110px;
   background: #ffffff;
-  margin: 40px 20px;
+  margin: 40px 10px;
   padding: 20px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,6 +454,7 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   cursor: pointer;
