@@ -157,7 +157,7 @@
         "page": "https://dmitriyivanovit.github.io/workshop-ikea-js/",
         "codes": "https://github.com/DmitriyIvanovIT/workshop-ikea-js/tree/day04",
         "tools": "Java Script"
-    }
+    },
     {
         "name": "SpaceX-React",
         "description": "SPA приложение spaceX на ReactJS",
